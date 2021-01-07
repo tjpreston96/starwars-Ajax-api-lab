@@ -4,15 +4,30 @@ import { Link } from "react-router-dom";
 
 class StarshipList extends Component {
   state = { results: [] };
+
+  async componentDidMount() {
+    const shipData = await getAllStarships();
+    this.setState({ results: shipData.results });
+  }
+
   render() {
     return (
       <div>
-        <h3>Starship List</h3>
+        <header>
+          <h1>Starship List</h1>
+        </header>
         <div className="ship-container">
-          <Link>
-          
-
-          </Link>
+          {this.state.results.map((name) => (
+            <div
+              id="shipDiv"
+              key={name.name}
+              style={{ width: "100px", height: "100px" }}
+            >
+              <Link to={{ pathname: "/starship", state: { name } }}>
+                {name.name}
+              </Link>
+            </div>
+          ))}
         </div>
       </div>
     );

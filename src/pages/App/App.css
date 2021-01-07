@@ -28,6 +28,37 @@
   color: #61dafb;
 }
 
+#shipDiv {
+  background-color: rgba(54, 78, 79);
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#shipDiv a {
+  color: white;
+  
+}
+
+header {
+  background-color: rgba(41, 44, 51);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ship-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: clamp(400px, 80vw, 1200px);
+  margin: auto;
+  justify-content: center;
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
