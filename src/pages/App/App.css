@@ -30,15 +30,16 @@
 
 #shipDiv {
   background-color: rgba(54, 78, 79);
-  margin-bottom: 5px;
+  margin: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 #shipDiv a {
   color: white;
-  
 }
 
 header {
@@ -50,6 +51,7 @@ header {
 }
 
 .ship-container {
+  padding: 10px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -58,6 +60,18 @@ header {
   justify-content: center;
 }
 
+.shipDetails{
+  background-color: rgba(54, 78, 79);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.shipDetails a{
+  color: white
+}
 
 @keyframes App-logo-spin {
   from {
