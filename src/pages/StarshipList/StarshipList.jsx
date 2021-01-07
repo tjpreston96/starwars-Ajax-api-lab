@@ -14,17 +14,18 @@ class StarshipList extends Component {
     return (
       <div>
         <header>
-          <h1>Starship List</h1>
+          <h1>Star Wars Starships</h1>
         </header>
         <div className="ship-container">
-          {this.state.results.map((name) => (
+          {this.state.results.map((ship) => (
             <div
+              
               id="shipDiv"
-              key={name.name}
-              style={{ width: "100px", height: "100px" }}
+              key={ship.name}
+              style={{ width: "175px", height: "100px" }}
             >
-              <Link to={{ pathname: "/starship", state: { name } }}>
-                {name.name}
+              <Link to={{ pathname: "/starship", state: { ship } }}>
+                {ship.name}
               </Link>
             </div>
           ))}
