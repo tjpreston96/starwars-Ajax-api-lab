@@ -27,8 +27,10 @@ class StarshipDetails extends Component {
             style={{ width: "500px", height: "250px" }}
           >
             <h2>Name: {shipDetails.name} </h2>
+            <br />
             <h2>Model: {shipDetails.model} </h2>
             <br />
+    <h2>Hyperdrive Rating: {shipDetails.hyperdrive_rating}</h2>
             <Link to={{ pathname: "/" }}>RETURN</Link>
           </div>
         </div>

@@ -60,18 +60,29 @@ header {
   justify-content: center;
 }
 
-.shipDetails{
+.shipDetails {
   background-color: rgba(54, 78, 79);
   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7.5px;
+  flex-direction: column;
+  padding: 35px;
+  
+}
+
+.shipDetails a {
+  color: white;
+}
+
+.ship-container{
   display: flex;
   align-items: center;
   justify-content: center;
   
 }
 
-.shipDetails a{
-  color: white
-}
 
 @keyframes App-logo-spin {
   from {
