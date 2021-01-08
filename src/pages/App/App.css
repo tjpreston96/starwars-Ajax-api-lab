@@ -29,8 +29,9 @@
 }
 
 body{
-  background: url(https://static4.depositphotos.com/1000263/342/v/380/depositphotos_3420335-stock-illustration-night-sky-black-with-stars.jpg);
-  
+  background: url(https://unsplash.com/photos/uhjiu8FjnsQ/download);
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 #shipDiv {
@@ -74,7 +75,7 @@ header {
   border-radius: 7.5px;
   flex-direction: column;
   padding: 35px;
-  
+  margin: 0 auto;
 }
 
 .shipDetails a {
